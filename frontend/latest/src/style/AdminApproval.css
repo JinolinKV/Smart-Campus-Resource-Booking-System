@@ -1,0 +1,131 @@
+/* Page */
+.admin-container {
+    padding: 40px;
+    background: #f4f6fb;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.admin-card {
+    width: 95%;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.admin-card h2 {
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+/* Table */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Header */
+.admin-table thead {
+    background: #2563eb;
+    color: white;
+}
+
+.admin-table th {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Rows */
+.admin-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table tr:hover {
+    background: #f1f5f9;
+}
+
+/* Occasion badges */
+.occasion {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: rgb(76, 42, 197);
+}
+
+.WORKSHOP {
+    background: red;
+}
+
+.SEMINAR {
+    background: orange;
+}
+
+.EVENT {
+    background: blue;
+}
+
+/* Status */
+.status {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: white;
+}
+
+.APPROVED {
+    background: green;
+}
+
+.REJECTED {
+    background: red;
+}
+
+.PENDING {
+    background: gray;
+}
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.approve-btn {
+    padding: 6px 12px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.reject-btn {
+    padding: 6px 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.approve-btn:hover {
+    background: #15803d;
+}
+
+.reject-btn:hover {
+    background: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .admin-card {
+        overflow-x: auto;
+    }
+
+}

@@ -1,0 +1,102 @@
+.teacher-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Card */
+.teacher-form {
+  width: 500px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.teacher-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2a5298;
+  font-size: 26px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.teacher-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Inputs */
+.teacher-form input,
+.teacher-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.teacher-form input:focus,
+.teacher-form select:focus {
+  border: 1px solid #2a5298;
+  outline: none;
+  box-shadow: 0 0 5px rgba(42,82,152,0.3);
+}
+
+/* Button */
+.teacher-form button {
+  width: 100%;
+  padding: 12px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.teacher-form button:hover {
+  background: #1e3c72;
+}
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.venue-card {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.venue-card.available {
+  background-color: #16a34a; /* green */
+}
+
+.venue-card.booked {
+  background-color: #dc2626; /* red */
+  cursor: not-allowed;
+}
+
+.venue-card:hover {
+  transform: scale(1.05);
+}
