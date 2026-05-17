@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-import "../style/Login.css"; 
+import "../style/Login.css";
 const AdminLogin = () => {
 
   const [email, setEmail] = useState("");
@@ -20,7 +20,7 @@ const AdminLogin = () => {
     try {
 
       const res = await axios.post(
-        "http://localhost:8080/auth/admin-login",
+        "https://smart-campus-resource-booking-system.onrender.com/auth/admin-login",
         data
       );
 
@@ -47,7 +47,7 @@ const AdminLogin = () => {
         <h1>RESOURCE MANAGEMENT SYSTEM</h1>
 
         <p>
-          Welcome to Admin Portal.  
+          Welcome to Admin Portal.
           Manage lab requests and approve or reject teacher submissions.
         </p>
 

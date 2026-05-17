@@ -46,9 +46,9 @@ const StudentSignup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/auth/student-signup",
-        data
-      );
+  "https://smart-campus-resource-booking-system.onrender.com/auth/student-signup",
+  data
+);
 
       alert("✅ Student Registered Successfully");
       console.log(res.data);

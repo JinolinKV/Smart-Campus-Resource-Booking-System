@@ -48,10 +48,9 @@ const AdminSignup = () => {
     try {
 
       const res = await axios.post(
-        "http://localhost:8080/auth/admin-signup",
+        "https://smart-campus-resource-booking-system.onrender.com/auth/admin-signup",
         data
       );
-
       alert("✅ Admin Registered Successfully");
       console.log(res.data);
 

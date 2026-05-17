@@ -11,8 +11,9 @@ const AdminApproval = () => {
   // fetch all requests
   const fetchRequests = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/resource/all");
-
+      const res = await axios.get(
+        "https://smart-campus-resource-booking-system.onrender.com/resource/all"
+      );
       setRequests(res.data);
     } catch (error) {
       console.log(error);
@@ -22,8 +23,9 @@ const AdminApproval = () => {
   // approve request
   const handleApprove = async (id) => {
     try {
-      await axios.put(`http://localhost:8080/resource/approve/${id}`);
-
+      await axios.put(
+        `https://smart-campus-resource-booking-system.onrender.com/resource/approve/${id}`
+      );
       fetchRequests();
     } catch (error) {
       console.log(error);
@@ -33,7 +35,9 @@ const AdminApproval = () => {
   // reject request
   const handleReject = async (id) => {
     try {
-      await axios.put(`http://localhost:8080/resource/reject/${id}`);
+      await axios.put(
+        `https://smart-campus-resource-booking-system.onrender.com/resource/reject/${id}`
+      );
 
       fetchRequests();
 
@@ -45,7 +49,7 @@ const AdminApproval = () => {
   };
 
   return (
-        <div className="admin-container">
+    <div className="admin-container">
 
       <div className="admin-card">
 

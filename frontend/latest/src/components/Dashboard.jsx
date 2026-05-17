@@ -14,9 +14,8 @@ const Dashboard = () => {
   const fetchResources = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/resource/status"
-      );
-      setResources(res.data);
+        "https://smart-campus-resource-booking-system.onrender.com/resource/status"
+      ); tResources(res.data);
     } catch (error) {
       console.log(error);
     }

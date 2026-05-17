@@ -16,7 +16,7 @@ const TeacherLogin = () => {
     try {
 
       const res = await axios.post(
-        "http://localhost:8080/auth/teacher-login",
+        "https://smart-campus-resource-booking-system.onrender.com/auth/teacher-login",
         {
           email: userName,
           password: pass
@@ -49,7 +49,7 @@ const TeacherLogin = () => {
         <h1>RESOURCE MANAGEMENT SYSTEM</h1>
 
         <p>
-          Welcome to Teacher Portal.  
+          Welcome to Teacher Portal.
           Login to request lab resources and manage class schedules.
         </p>
 

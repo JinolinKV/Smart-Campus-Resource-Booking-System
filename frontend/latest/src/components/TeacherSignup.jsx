@@ -40,7 +40,7 @@ const TeacherSignup = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/auth/teacher-signup",
+        "https://smart-campus-resource-booking-system.onrender.com/auth/teacher-signup",
         {
           userName: userName,
           email: mail,

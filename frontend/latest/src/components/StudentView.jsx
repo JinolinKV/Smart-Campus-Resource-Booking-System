@@ -14,7 +14,7 @@ const StudentView = () => {
     try {
 
       const res = await axios.get(
-        "http://localhost:8080/resource/approved"
+        "https://smart-campus-resource-booking-system.onrender.com/resource/approved"
       );
 
       setData(res.data);

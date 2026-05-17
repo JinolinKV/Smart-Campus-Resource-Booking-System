@@ -21,9 +21,9 @@ const StudentLogin = () => {
     try {
 
       const res = await axios.post(
-        "http://localhost:8080/auth/student-login",
-        data
-      );
+  "https://smart-campus-resource-booking-system.onrender.com/auth/student-login",
+  data
+);
 
       alert("Login Successful");
 
