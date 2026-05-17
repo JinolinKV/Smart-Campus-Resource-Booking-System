@@ -47,8 +47,8 @@ const TeacherReq = () => {
   const fetchVenueStatus = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8080/resource/venue-status?date=${date}&period=${startPeriod}`
-      );
+  `https://smart-campus-resource-booking-system.onrender.com/resource/venue-status?date=${date}&period=${startPeriod}`
+);
       setBooked(res.data?.booked || []);
     } catch (error) {
       console.log(error);
@@ -83,7 +83,7 @@ const TeacherReq = () => {
     try {
       setLoading(true);
 
-      const res = await axios.post("http://localhost:8080/resource/request", {
+      const res = await axios.post("https://smart-campus-resource-booking-system.onrender.com/resource/request", {
         name,
         year,
         occasion,
@@ -139,9 +139,7 @@ const TeacherReq = () => {
         );
 
         if (confirmReplace) {
-          const retryRes = await axios.post(
-            "http://localhost:8080/resource/request",
-            {
+          const retryRes = await axios.post("https://smart-campus-resource-booking-system.onrender.com/resource/request",{
               name,
               email,
               year,
